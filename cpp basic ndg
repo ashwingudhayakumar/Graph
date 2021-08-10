@@ -1,0 +1,49 @@
+//this is undirected array representation
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    cout<<"enter how much nodes you want\n";
+    int n;
+    cin>>n;
+    int m=n+1;
+    //ndg non directed graph
+    int arr[m][m];
+    
+    # memset(arr,-1,sizeof(arr[0][0])*m*m);
+   
+    int u,v;
+    cout<<"enter the how much connection you want\n";int count;
+    cin>>count;
+    for(int i=0;i<count;i++){
+        cout<<"enter the connection "<<i;
+        cin>>u>>v;
+       arr[u][v]=1;
+       arr[v][u]=1;
+    }
+    for(int i=0;i<m;i++){
+        for(int j=0;j<m;j++){
+            cout<<"arr["<<i<<"]"<<"["<<j<<"]"<<arr[i][j]<<" ";
+            
+        }
+        cout<<endl;
+    }
+}
+
+//this adjecency list 
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,m;
+    cin>>n>>m;
+    vector<pair<int,int>>adj[n+1];
+    for(int i=0;i<m;i++){
+        int u,v,wt;
+        cin>>u>>v>>wt;
+        adj[u].push_back({v,wt});
+        adj[v].push_back({u,wt});
+    }
+    return 0;
+}
