@@ -1,0 +1,11 @@
+ Graph Terminology - Vertex, Node, Edge
+ Graph Types : Undirected (edges do not have directions) and directed graphs (has direction ->)
+ Indegree and out degree of graphs - degree of vertex : incoming or outgoing edges from the vertex , Undirected graph : total degree = 2 x number of edges of the graph , 
+ Directed graph : total degree = indegree + outdegree
+ Path in graph : Sequence of node(vertex) - You cannot visit the node more than once.
+ Undirected Cyclic Graph - has cycle 
+ Undirected Acyclic Graph - has no cycle (can be also called tree) 
+ Directed Cyclic Graph 
+ Directed Acyclic Graph (DAG)
+ Weighted Undirected Graph (edge has weights) 
+ Assume weight 1 if edge weight is not given to solve the problem
